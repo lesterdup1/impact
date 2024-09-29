@@ -8,7 +8,7 @@ new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-5KWTNNDQ');</script>
-<!-- End Google Tag Manager -->	
+<!-- End Google Tag Manager -->
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Welcome to my page!</title>
@@ -80,37 +80,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
-      <!-- HTML Button -->
-      <button type="submit">Send API Request</button>
-
-      <!-- JavaScript Code -->
-      <script>
-        // Adding an event listener to the button to trigger the API call when clicked
-        document.getElementById('apiButton').addEventListener('click', function() {
-          // Fetch API: Sending a GET request to httpbin.org
-          fetch('https://httpbin.org/get')
-            .then(response => response.json())  // Parsing the JSON response
-            .then(data => {
-              console.log(data);  // Outputting the response to the console
-              alert('GET request sent! Check the console for the response.');
-            })
-            .catch(error => {
-              console.error('Error:', error);  // Handling any errors
-              alert('An error occurred.');
-            });
-        });
-      </script>
-      <div></div>
-      <!-- HTML Button -->
-      <button id="redirectButton">Flow Diagram</button>
-
-      <!-- JavaScript to handle redirection -->
-      <script>
-        document.getElementById('redirectButton').addEventListener('click', function() {
-          window.location.href = 'impact.html'; 
-        });
-      </script>
-	    
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
@@ -119,8 +88,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>As an Application Development Manager with extensive experience, I lead and oversee the design, development, and deployment of software solutions that drive business innovation. 
-           I manage cross-functional teams, ensuring projects are delivered on time and within budget while aligning with strategic goals. 
+        <p>As an Application Development Manager with extensive experience, I lead and oversee the design, development, and deployment of software solutions that drive business innovation.
+           I manage cross-functional teams, ensuring projects are delivered on time and within budget while aligning with strategic goals.
            My role involves collaborating with stakeholders, optimizing processes, and implementing best practices to ensure high-quality, scalable, and secure applications.</p>
       </div><!-- End Section Title -->
 
@@ -154,13 +123,39 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 </ul>
               </div>
             </div>
--->			
+-->
             <p class="py-3">
                I lead software teams in designing and delivering high-quality, scalable applications. I focus on aligning development processes with business goals to drive innovation and efficiency.
             </p>
           </div>
         </div>
+      <!-- Buttons for Redirection -->
+      <div class="button-container">
+        <button id="apiButton" class="btn btn-primary">Send API Request</button>
+        <button id="redirectButton" class="btn btn-secondary">Flow Diagram</button>
+      </div>
 
+      <!-- JavaScript to handle button clicks and redirection -->
+      <script>
+        // Adding an event listener to the button to trigger the API call when clicked
+        document.getElementById('apiButton').addEventListener('click', function() {
+          // Fetch API: Sending a GET request to httpbin.org
+          fetch('https://httpbin.org/get')
+            .then(response => response.json())  // Parsing the JSON response
+            .then(data => {
+              console.log(data);  // Outputting the response to the console
+              alert('GET request sent! Check the console for the response.');
+            })
+            .catch(error => {
+              console.error('Error:', error);  // Handling any errors
+              alert('An error occurred.');
+            });
+        });
+
+        document.getElementById('redirectButton').addEventListener('click', function() {
+          window.location.href = 'impact.html';
+        });
+      </script>
       </div>
 
     </section><!-- /About Section -->
@@ -288,9 +283,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li>Provide technical leadership throughout the software development lifecycle, utilizing Agile project management methodologies </li>
                 <li>Interface with various departments including line of business, product management, project management, and quality management </li>
                 <li>Conduct meetings with business customers to gather requirements, define scope, manage scope changes, plan releases, and determine content </li>
-		<li>Status tracking of project tasks, milestones, deliverables, or key dates </li>
-		<li>Risk and expectation management – resourcing, deliverables, requirements, and at times budgets </li>
-		<li>Coaching and mentoring staff including one-on-ones, performance reviews, and personal career mapping, team-building, cohesion, and identity management </li>
+		        <li>Status tracking of project tasks, milestones, deliverables, or key dates </li>
+		        <li>Risk and expectation management – resourcing, deliverables, requirements, and at times budgets </li>
+		        <li>Coaching and mentoring staff including one-on-ones, performance reviews, and personal career mapping, team-building, cohesion, and identity management </li>
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -303,8 +298,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li>Served as a technical reference for developers within the team</li>
                 <li>Represented the team in technical discussions and shaped application design within project contexts </li>
                 <li>Provided and drove technical improvements for the application area</li>
-		<li>Developed programs with advanced technical capabilities</li>
-		<li>Mentored and provided training to team members to enhance their skills and performance</li>
+		        <li>Developed programs with advanced technical capabilities</li>
+		        <li>Mentored and provided training to team members to enhance their skills and performance</li>
               </ul>
             </div><!-- Edn Resume Item -->
 
@@ -317,13 +312,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li>Designed and implemented high-level solutions for complex technical projects </li>
                 <li>Developed programs with advanced technical capabilities  </li>
                 <li>Executed unit testing and functional testing for own code and mentored junior staff </li>
-		<li>Deployed and implemented solutions effectively </li>
-		<li>Ensured smooth operations and maintenance of solutions </li>
+		        <li>Deployed and implemented solutions effectively </li>
+		        <li>Ensured smooth operations and maintenance of solutions </li>
                 <li>Provided exceptional support for day-to-day queries from users and cross-functional teams </li>
                 <li>Mentored and provided training to team members to enhance their skills and performance</li>
               </ul>
             </div><!-- Edn Resume Item -->
-			
+
             <div class="resume-item">
               <h4>Technical Team Lead</h4>
               <h5>2018 - 2019</h5>
@@ -336,7 +331,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </ul>
             </div><!-- Edn Resume Item -->
 
-			            <div class="resume-item">
+            <div class="resume-item">
               <h4>Development Team Lead</h4>
               <h5>2013 - 2018</h5>
               <p><em>Adapt IT</em></p>
@@ -345,7 +340,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li>Led requirements gathering, technical design, and code reviews for the project  </li>
                 <li>Conducted thorough Unit and System testing to guarantee the efficiency and reliability of the implementation  </li>
                 <li>Estimated project timelines and managed progress, ensuring timely delivery of the product  </li>
-		<li>Mentored and provided training to team members to enhance their skills and performance </li>
+		        <li>Mentored and provided training to team members to enhance their skills and performance </li>
               </ul>
             </div><!-- Edn Resume Item -->
 
