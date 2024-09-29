@@ -80,6 +80,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
 
+      <!-- HTML Button -->
+      <button id="apiButton">Send API Request</button>
+      <!-- JavaScript Code -->
+      <script>
+        // Adding an event listener to the button to trigger the API call when clicked
+        document.getElementById('apiButton').addEventListener('click', function() {
+          // Fetch API: Sending a GET request to httpbin.org
+          fetch('https://httpbin.org/get')
+            .then(response => response.json())  // Parsing the JSON response
+            .then(data => {
+              console.log(data);  // Outputting the response to the console
+              alert('GET request sent! Check the console for the response.');
+            })
+            .catch(error => {
+              console.error('Error:', error);  // Handling any errors
+              alert('An error occurred.');
+            });
+        });
+      </script>
+      <!-- HTML Button -->
+      <button id="redirectButton">Go to Page 2</button>
+
+      <!-- JavaScript to handle redirection -->
+      <script>
+        document.getElementById('redirectButton').addEventListener('click', function() {
+          window.location.href = 'impact.html'; 
+        });
+      </script>
+	    
     </section><!-- /Hero Section -->
 
     <!-- About Section -->
